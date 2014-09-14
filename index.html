@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>BodyVisualiser</title>
+        <meta charset="utf-8">
+        
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="jquery-bodyviz.js"></script>
+        <script type="text/javascript">
+            var viz;
+            $(function() {
+                $('#my-button').click(function() {
+                    viz.update('Chicken Run!');
+                })
+                viz = $('#bodyviz-container').bodyviz();
+                viz.update('...');
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <button id="my-button">Click Me</button>
+        </div>
+        <div id="bodyviz-container">
+        </div>
+    </body>
+</html>

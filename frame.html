@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>BodyVisualiser</title>
+        <meta charset="utf-8">
+
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript">
+        function myFunc(message) {
+            console.log(message);
+            $('#message-target').text(message);
+        }
+        parent.frameFunc = myFunc;
+        </script>
+    </head>
+    <body>
+        <p id="message-target">Frame contents</p>
+    </body>
+</html> 
